@@ -40,7 +40,7 @@ for (let i = 0; i < numPieces; i++) {
   piece.style.backgroundImage = 'url("imgs/daniel.png")';
   const col = idx % 5;
   const row = Math.floor(idx / 5);
-  piece.style.backgroundPosition = -${col * 60}px -${row * 60}px;
+  piece.style.backgroundPosition = `-${col * 60}px -${row * 60}px`;
 
   piece.addEventListener('click', () => {
     selectedPiece = piece;
